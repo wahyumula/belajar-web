@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web wahyu mula djeti</title>
+    <style>
+        html,
+        body,
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .box-terluar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            height: 100vh;
+            max-width: 500px;
+            background-image: url("ml.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        .box-saya {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            margin-bottom: 20px;
+        }
+
+        .box-saya img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+        }
+
+        .box-link {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            gap: 8px;
+        }
+
+        .box-link button {
+            background-color: cyan;
+            padding: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-weight: bolder;
+            transition: 200ms ease-in-out;
+
+        }
+
+        .box-link button:hover {
+            background-color: rgb(217, 140, 8);
+            color: #ffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-terluar">
+        <div class="box-saya">
+            <img src="kt.jpg" width="400" height="360" />
+            <h1>Hellow word</h1>
+            <p>Welcome To the jungle</p><br>
+        </div>
+        <div class="box-link">
+            <button onclick="hayu('https://www.youtube.com/channel/UCwgaepMGdD-Fq_lWa--GgJA')">JOIN THE TREND</button><br>
+            <button onclick="hayu('https://www.instagram.com/accounts/login/')">LOGIN INSTAGRAM</button><br>
+            <button onclick="hayu('https://twitter.com/i/flow/login')">LOGIN TWITTER</button><br>
+            <button onclick="hayu('https://id-id.facebook.com/login/device-based/regular/login/?login_attempt=1')">LOGIN
+                FACEBOOK </button><br>
+            <button onclick="hayu('https://shopee.co.id/buyer/login')">LOGIN SHOPEE</button><br>
+        </div>
+    </div>
+    <script>
+        function hayu(kemana) {
+            window.open(kemana)
+        }
+    </script>
+</body>
+
+</html>
+
